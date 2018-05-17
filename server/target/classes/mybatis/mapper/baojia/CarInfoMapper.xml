@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baojia.server.mapper.baojia.CarInfoMapper">
+    <resultMap id="BaseResultMap" type="model.baojia.CarInfo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="cin" property="cin" jdbcType="VARCHAR"/>
+        <result column="sort_id" property="sortId" jdbcType="SMALLINT"/>
+        <result column="model_id" property="modelId" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="displacement" property="displacement" jdbcType="REAL"/>
+        <result column="full_name" property="fullName" jdbcType="VARCHAR"/>
+        <result column="alias_name" property="aliasName" jdbcType="VARCHAR"/>
+        <result column="picture_url" property="pictureUrl" jdbcType="VARCHAR"/>
+        <result column="year_style" property="yearStyle" jdbcType="SMALLINT"/>
+        <result column="from_url" property="fromUrl" jdbcType="VARCHAR"/>
+        <result column="from_url_md5" property="fromUrlMd5" jdbcType="CHAR"/>
+        <result column="list_order" property="listOrder" jdbcType="INTEGER"/>
+        <result column="status" property="status" jdbcType="TINYINT"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, cin, sort_id, model_id, name, displacement, full_name, alias_name, picture_url,
+        year_style, from_url, from_url_md5, list_order, status
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from car_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from car_info
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="model.baojia.CarInfo">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into car_info (cin, sort_id, model_id,
+        name, deposit, displacement, full_name,
+        boxp2_ready,alias_name, picture_url, year_style,
+        from_url, from_url_md5, list_order,
+        status)
+        values (#{cin,jdbcType=VARCHAR}, #{sortId,jdbcType=SMALLINT}, #{modelId,jdbcType=INTEGER},
+        #{name,jdbcType=VARCHAR}, #{deposit,jdbcType=INTEGER}, #{displacement,jdbcType=REAL}, #{fullName,jdbcType=VARCHAR},
+        #{boxp2Ready,jdbcType=INTEGER}, #{aliasName,jdbcType=VARCHAR}, #{pictureUrl,jdbcType=VARCHAR}, #{yearStyle,jdbcType=SMALLINT},
+        #{fromUrl,jdbcType=VARCHAR}, #{fromUrlMd5,jdbcType=CHAR}, #{listOrder,jdbcType=INTEGER},
+        #{status,jdbcType=TINYINT})
+    </insert>
+    <insert id="insertSelective" parameterType="model.baojia.CarInfo">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into car_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="cin != null">
+                cin,
+            </if>
+            <if test="sortId != null">
+                sort_id,
+            </if>
+            <if test="modelId != null">
+                model_id,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="displacement != null">
+                displacement,
+            </if>
+            <if test="fullName != null">
+                full_name,
+            </if>
+            <if test="aliasName != null">
+                alias_name,
+            </if>
+            <if test="pictureUrl != null">
+                picture_url,
+            </if>
+            <if test="yearStyle != null">
+                year_style,
+            </if>
+            <if test="fromUrl != null">
+                from_url,
+            </if>
+            <if test="fromUrlMd5 != null">
+                from_url_md5,
+            </if>
+            <if test="listOrder != null">
+                list_order,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="cin != null">
+                #{cin,jdbcType=VARCHAR},
+            </if>
+            <if test="sortId != null">
+                #{sortId,jdbcType=SMALLINT},
+            </if>
+            <if test="modelId != null">
+                #{modelId,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="displacement != null">
+                #{displacement,jdbcType=REAL},
+            </if>
+            <if test="fullName != null">
+                #{fullName,jdbcType=VARCHAR},
+            </if>
+            <if test="aliasName != null">
+                #{aliasName,jdbcType=VARCHAR},
+            </if>
+            <if test="pictureUrl != null">
+                #{pictureUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="yearStyle != null">
+                #{yearStyle,jdbcType=SMALLINT},
+            </if>
+            <if test="fromUrl != null">
+                #{fromUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="fromUrlMd5 != null">
+                #{fromUrlMd5,jdbcType=CHAR},
+            </if>
+            <if test="listOrder != null">
+                #{listOrder,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=TINYINT},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="model.baojia.CarInfo">
+        update car_info
+        <set>
+            <if test="cin != null">
+                cin = #{cin,jdbcType=VARCHAR},
+            </if>
+            <if test="sortId != null">
+                sort_id = #{sortId,jdbcType=SMALLINT},
+            </if>
+            <if test="modelId != null">
+                model_id = #{modelId,jdbcType=INTEGER},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="displacement != null">
+                displacement = #{displacement,jdbcType=REAL},
+            </if>
+            <if test="fullName != null">
+                full_name = #{fullName,jdbcType=VARCHAR},
+            </if>
+            <if test="aliasName != null">
+                alias_name = #{aliasName,jdbcType=VARCHAR},
+            </if>
+            <if test="pictureUrl != null">
+                picture_url = #{pictureUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="yearStyle != null">
+                year_style = #{yearStyle,jdbcType=SMALLINT},
+            </if>
+            <if test="fromUrl != null">
+                from_url = #{fromUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="fromUrlMd5 != null">
+                from_url_md5 = #{fromUrlMd5,jdbcType=CHAR},
+            </if>
+            <if test="listOrder != null">
+                list_order = #{listOrder,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=TINYINT},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="model.baojia.CarInfo">
+        update car_info
+        set cin = #{cin,jdbcType=VARCHAR},
+        sort_id = #{sortId,jdbcType=SMALLINT},
+        model_id = #{modelId,jdbcType=INTEGER},
+        name = #{name,jdbcType=VARCHAR},
+        displacement = #{displacement,jdbcType=REAL},
+        full_name = #{fullName,jdbcType=VARCHAR},
+        alias_name = #{aliasName,jdbcType=VARCHAR},
+        picture_url = #{pictureUrl,jdbcType=VARCHAR},
+        year_style = #{yearStyle,jdbcType=SMALLINT},
+        from_url = #{fromUrl,jdbcType=VARCHAR},
+        from_url_md5 = #{fromUrlMd5,jdbcType=CHAR},
+        list_order = #{listOrder,jdbcType=INTEGER},
+        status = #{status,jdbcType=TINYINT}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

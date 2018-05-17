@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baojia.server.mapper.contract.ContractBillingMapper">
+    <resultMap id="BaseResultMap" type="model.contract.ContractBilling">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="contract_id" property="contractId" jdbcType="INTEGER"/>
+        <result column="party_id" property="partyId" jdbcType="INTEGER"/>
+        <result column="receivable" property="receivable" jdbcType="DOUBLE"/>
+        <result column="received" property="received" jdbcType="DOUBLE"/>
+        <result column="payable" property="payable" jdbcType="DOUBLE"/>
+        <result column="paid" property="paid" jdbcType="DOUBLE"/>
+        <result column="refundable" property="refundable" jdbcType="DOUBLE"/>
+        <result column="refunded" property="refunded" jdbcType="DOUBLE"/>
+        <result column="status" property="status" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="DATE"/>
+        <result column="upate_time" property="upateTime" jdbcType="DATE"/>
+        <result column="remark" property="remark" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, contract_id, party_id, receivable, received, payable, paid, refundable, refunded,
+        status, create_time, upate_time, remark
+    </sql>
+    <insert id="insertSelective" parameterType="model.contract.ContractBilling">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into contract_billing
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="contractId != null">
+                contract_id,
+            </if>
+            <if test="partyId != null">
+                party_id,
+            </if>
+            <if test="receivable != null">
+                receivable,
+            </if>
+            <if test="received != null">
+                received,
+            </if>
+            <if test="payable != null">
+                payable,
+            </if>
+            <if test="paid != null">
+                paid,
+            </if>
+            <if test="refundable != null">
+                refundable,
+            </if>
+            <if test="refunded != null">
+                refunded,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="upateTime != null">
+                upate_time,
+            </if>
+            <if test="remark != null">
+                remark,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="contractId != null">
+                #{contractId,jdbcType=INTEGER},
+            </if>
+            <if test="partyId != null">
+                #{partyId,jdbcType=INTEGER},
+            </if>
+            <if test="receivable != null">
+                #{receivable,jdbcType=DOUBLE},
+            </if>
+            <if test="received != null">
+                #{received,jdbcType=DOUBLE},
+            </if>
+            <if test="payable != null">
+                #{payable,jdbcType=DOUBLE},
+            </if>
+            <if test="paid != null">
+                #{paid,jdbcType=DOUBLE},
+            </if>
+            <if test="refundable != null">
+                #{refundable,jdbcType=DOUBLE},
+            </if>
+            <if test="refunded != null">
+                #{refunded,jdbcType=DOUBLE},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=DATE},
+            </if>
+            <if test="upateTime != null">
+                #{upateTime,jdbcType=DATE},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="model.contract.ContractBilling">
+        update contract_billing
+        <set>
+            <if test="contractId != null">
+                contract_id = #{contractId,jdbcType=INTEGER},
+            </if>
+            <if test="partyId != null">
+                party_id = #{partyId,jdbcType=INTEGER},
+            </if>
+            <if test="receivable != null">
+                receivable = #{receivable,jdbcType=DOUBLE},
+            </if>
+            <if test="received != null">
+                received = #{received,jdbcType=DOUBLE},
+            </if>
+            <if test="payable != null">
+                payable = #{payable,jdbcType=DOUBLE},
+            </if>
+            <if test="paid != null">
+                paid = #{paid,jdbcType=DOUBLE},
+            </if>
+            <if test="refundable != null">
+                refundable = #{refundable,jdbcType=DOUBLE},
+            </if>
+            <if test="refunded != null">
+                refunded = #{refunded,jdbcType=DOUBLE},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=DATE},
+            </if>
+            <if test="upateTime != null">
+                upate_time = #{upateTime,jdbcType=DATE},
+            </if>
+            <if test="remark != null">
+                remark = #{remark,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

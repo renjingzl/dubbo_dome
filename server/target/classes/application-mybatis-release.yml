@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    oms.url: jdbc:mysql://10.1.11.2:3306/baojia_oms?characterEncoding=utf-8
+    oms.username: baojia_ams
+    oms.password: 5QwKVX8k7VwwFAR1
+    oms.type: com.alibaba.druid.pool.DruidDataSource
+
+#    数据源其他配置
+    oms.initialSize: 5
+    oms.minIdle: 5
+    oms.maxActive: 20
+    oms.maxWait: 60000
+    oms.timeBetweenEvictionRunsMillis: 60000
+    oms.minEvictableIdleTimeMillis: 300000
+    oms.validationQuery: SELECT 1 FROM DUAL
+    oms.testWhileIdle: true
+    oms.testOnBorrow: false
+    oms.testOnReturn: false
+    oms.poolPreparedStatements: true
+#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    oms.filters: stat,wall,log4j
+    oms.maxPoolPreparedStatementPerConnectionSize: 20
+    oms.useGlobalDataSourceStat: true
+    oms.connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+
+    baojia.url: jdbc:mysql://10.1.11.2:3306/baojia?characterEncoding=utf-8
+    baojia.username: baojia_ams
+    baojia.password: 5QwKVX8k7VwwFAR1
+    baojia.type: com.alibaba.druid.pool.DruidDataSource
+
+#    数据源其他配置
+    baojia.initialSize: 5
+    baojia.minIdle: 5
+    baojia.maxActive: 20
+    baojia.maxWait: 60000
+    baojia.timeBetweenEvictionRunsMillis: 60000
+    baojia.minEvictableIdleTimeMillis: 300000
+    baojia.validationQuery: SELECT 1 FROM DUAL
+    baojia.testWhileIdle: true
+    baojia.testOnBorrow: false
+    baojia.testOnReturn: false
+    baojia.poolPreparedStatements: true
+#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    baojia.filters: stat,wall,log4j
+    baojia.maxPoolPreparedStatementPerConnectionSize: 20
+    baojia.useGlobalDataSourceStat: true
+    baojia.connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+
+    contract.url: jdbc:mysql://10.1.11.2:3306/baojia_contract?characterEncoding=utf-8
+    contract.username: baojia_ams
+    contract.password: 5QwKVX8k7VwwFAR1
+    contract.type: com.alibaba.druid.pool.DruidDataSource
+
+#    数据源其他配置
+    contract.initialSize: 5
+    contract.minIdle: 5
+    contract.maxActive: 20
+    contract.maxWait: 60000
+    contract.timeBetweenEvictionRunsMillis: 60000
+    contract.minEvictableIdleTimeMillis: 300000
+    contract.validationQuery: SELECT 1 FROM DUAL
+    contract.testWhileIdle: true
+    contract.testOnBorrow: false
+    contract.testOnReturn: false
+    contract.poolPreparedStatements: true
+#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    contract.filters: stat,wall,log4j
+    contract.maxPoolPreparedStatementPerConnectionSize: 20
+    contract.useGlobalDataSourceStat: true
+    contract.connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500

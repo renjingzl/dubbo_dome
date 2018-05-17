@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    include: mybatis-test
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+  dubbo:
+    application:
+      name: provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.baojia.server.service
+jedis :
+  pool :
+    host : 127.0.0.1
+    port : 6379
+    config :
+      maxTotal: 100
+      maxIdle: 10
+      maxWaitMillis : 100000

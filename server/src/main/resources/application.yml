@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+#用默认的slf4j时生效，用log4j需要写log4j的配置文件
+#logging:
+#  level:
+#    com.baojia: error
+#  file: /opt/log/oms-error.log
+#  pattern:
+#    console: "[%d{yyyy-MM-dd HH:mm:ss,SSS}] [%thread] [%p] %-5level %logger - %m%n"
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
