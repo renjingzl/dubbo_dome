@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8a4a167-8528-443d-bc56-f56652ff332b" name="Default" comment="" />
+    <list default="true" id="d8a4a167-8528-443d-bc56-f56652ff332b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/model/baojia/CarInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/model/contract/ContractBilling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/model/oms/OMSOperationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/service/CarInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/service/ContractBillingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/service/OMSOperationLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/model/baojia/CarInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/model/contract/ContractBilling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/model/oms/OMSOperationLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/service/CarInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/service/ContractBillingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/service/HelloService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/service/OMSOperationLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/classes/service/RedisService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/baojia/consumer/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/baojia/consumer/controller/OperationLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/baojia/consumer/service/BusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/test/java/com/baojia/consumer/ConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/baojia/consumer/ConsumerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/baojia/consumer/controller/OperationLogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/classes/com/baojia/consumer/service/BusinessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/target/test-classes/com/baojia/consumer/ConsumerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dome.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/config/BaojiaSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/config/ContractSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/config/OmsSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/mapper/baojia/CarInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/mapper/contract/ContractBillingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/mapper/oms/OMSOperationLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/service/impl/CarInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/service/impl/ContractBillingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/service/impl/OMSOperationLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/baojia/server/util/JedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application-mybatis-readonly.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application-mybatis-release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application-mybatis-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application-release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/mybatis/mapper/baojia/CarInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/mybatis/mapper/contract/ContractBillingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/mybatis/mapper/oms/OMSOperationLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/test/java/com/baojia/server/ServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application-mybatis-readonly.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application-mybatis-release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application-mybatis-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application-release.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/ServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/config/BaojiaSqlSessionFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/config/ContractSqlSessionFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/config/DruidConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/config/OmsSqlSessionFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/mapper/baojia/CarInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/mapper/contract/ContractBillingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/mapper/oms/OMSOperationLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/service/impl/CarInfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/service/impl/ContractBillingServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/service/impl/OMSOperationLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/service/impl/RedisServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/util/JedisUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/util/JedisUtil$RedisUtilHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/com/baojia/server/util/JedisUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/mybatis/mapper/baojia/CarInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/mybatis/mapper/contract/ContractBillingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/mybatis/mapper/oms/OMSOperationLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/target/test-classes/com/baojia/server/ServerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/server/target/" />
@@ -36,6 +131,9 @@
       <dir>$PROJECT_DIR$/consumer/src/main/java/com/baojia/consumer</dir>
       <dir>$PROJECT_DIR$/consumer/src/main/java/com/baojia/server</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -121,6 +219,7 @@
     <option name="width" value="1440" />
     <option name="height" value="797" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -504,7 +603,7 @@
       <workItem from="1526476840652" duration="319000" />
       <workItem from="1526477215471" duration="1838000" />
       <workItem from="1526515618416" duration="1684000" />
-      <workItem from="1526523273949" duration="2738000" />
+      <workItem from="1526523273949" duration="2937000" />
     </task>
     <servers />
   </component>
@@ -541,10 +640,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45406000" />
+    <option name="totallyTimeSpent" value="45605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32998565" />
@@ -563,12 +662,12 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.32857144" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.32857144" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28120518" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32998565" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739628" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
